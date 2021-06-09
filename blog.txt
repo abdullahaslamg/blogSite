@@ -1,0 +1,24 @@
+WEB APPLICATION: BLOG
+Technologies used: mysql2, sequelize, handlebars
+functionality:
+- NavBar: Home, Dashboard, Sign Up, Login (without login, every link points 
+to signup)
+
+- user signup/login
+**signup automatically does login
+**signup page also has login link
+**if I am idle on the site for 10 minutes, it prompts me to login before 
+I can update or delete posts/comments
+
+- homepage: READ then display previous blog posts from everyone (displays 
+post title & posted date)
+
+- dashboard: my blog posts & new blog post button
+**my single blog post has an UPDATE POST & DELETE POST button
+** new blog post: 2 text inputs total, 1 for post title, 1 for post 
+content, & 1 button to CREATE POST button
+
+- single blog post: displays post title, post content, post creator, 
+post date, input box to leave comment, previous comments left by others
+**my single blog post displays update & delete links to edit blog post
+**my post comments should display update & delete links to edit my comment

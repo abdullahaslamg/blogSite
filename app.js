@@ -42,7 +42,12 @@ app.use((err, req, res, next) => {
     })
 })
 
+app.get('/newTour', (req, res) => {
+  res.send('You aer sending a files')
+})
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`App is listeneing on port ${port}`);
 });
+
+

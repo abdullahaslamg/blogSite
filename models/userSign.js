@@ -11,6 +11,7 @@ const userSchema = new mongoose.Schema({
   email: {
     type: String,
     required: [true, 'A user must have a email'],
+    unique: true,
     trim: true,
     validate: [validator.isEmail, 'Please provide a valid email']
   },
@@ -38,7 +39,6 @@ userSchema.pre('save', async function(next) {
 
   this.password = await bcrypt.hash(this.password, 10);
   this.passwordConfirm = undefined;
-
   next();
 });
 

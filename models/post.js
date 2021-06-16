@@ -17,15 +17,15 @@ const postSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
-  comment: {
-      type: String,
-      trim: true
-  },
-  user: {
-    type: mongoose.Schema.ObjectId,
-    ref: 'User',
-    required: [true, 'A comment must belong to a user']
-  }
+  // comment: {
+  //     type: String,
+  //     trim: true
+  // },
+  // user: {
+  //   type: mongoose.Schema.ObjectId,
+  //   ref: 'User',
+  //   required: [true, 'A comment must belong to a user']
+  // }
 });
 
 const Post = mongoose.model('Post', postSchema);
